@@ -1,0 +1,11 @@
+docker run -v /path/ITN/Cibersort:/src/data \
+-v /path/ITN/Cibersort/2021-09-16_output_allGenes_500perm:/src/outdir \
+cibersortx/fractions \
+--username qxiao2@bwh.harvard.edu \
+--token [token] \
+--single_cell TRUE \
+--refsample 2021-09-16_CiberSort_GEP_10k_broadtype_ref.txt \
+--mixture 2021-08-02_CiberSort_mixture.txt \
+—perm 500 \
+--fraction 0.5 \
+--rmbatchSmode TRUE
